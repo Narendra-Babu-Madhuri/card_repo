@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
  .container{
     display: flex;
     justify-content: center;
@@ -11,31 +10,56 @@
     
  }
  .card{
-    background-color: rgb(144, 123, 75);
+    background-color: rgb(241, 223, 182);
     border-radius: 10px;
     width: 260px;
-    height: 430px;
+    height: 425px;
     margin: 50px;
     cursor: pointer;
     box-shadow: 0px 5px 10px rgb(0,0,0,0.3);
-
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+ }
+ .card:hover{
+  background-color: beige;
+  color: #f8f7f7;
+  transform: scale(1.03);
+  transition: all is ease;
+ }
+ .card-hover{
+  transform: scale(2pt);
  }
  .card-image{
     width: 260px;
     height: 200px;
     border-radius: 5px;
  }
- .content h3{
-    color: #fff;
-    text-align: center;
-    font-size: 35px;
+ .content{
+   color: #fff;
+   padding: 8px;
+   font-size: 18px;
     
  }
- .content p{
-    justify-content: flex-end;
+ 
+ .heading{
+   text-align: center;
+   color: rgb(39, 88, 93);
  }
- .btn{
-    text-decoration: none;
-    position: relative;
-    left: 25px;
+ .para{
+   text-align: justify;
+   color: #373131;
+ }
+ 
+ .know-more{
+   text-decoration: underline;
+   background-color: #40566d;
+   color: #fff;
+   display: block;
+   text-align: center;
+   transition: background-color 0.3s;
+   border-radius: 5px;
+   margin: 10px 50px;
+ }
+ .know-more:hover{
+   background-color: #744b5c;
  }
